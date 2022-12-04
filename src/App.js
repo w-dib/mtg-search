@@ -1,11 +1,11 @@
 import './App.css';
-import LiveSearch from './LiveSearch';
+import Navbar from './Navbar';
+
 
 function App() {
   return (
     <div className="App">
-<h1>MTG Search Engine</h1>
-<LiveSearch/>
+<Navbar/>
     </div>
   );
 }
