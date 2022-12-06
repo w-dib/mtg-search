@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mtg-search/static/css/main.7c3b7e55.css",
-    "main.js": "/mtg-search/static/js/main.06499ca5.js",
+    "main.css": "/mtg-search/static/css/main.85cfffb7.css",
+    "main.js": "/mtg-search/static/js/main.36ad567a.js",
     "static/js/787.77792f63.chunk.js": "/mtg-search/static/js/787.77792f63.chunk.js",
     "static/media/MTG-Logo.png": "/mtg-search/static/media/MTG-Logo.9b637d71a112e223d39f.png",
     "index.html": "/mtg-search/index.html",
-    "main.7c3b7e55.css.map": "/mtg-search/static/css/main.7c3b7e55.css.map",
-    "main.06499ca5.js.map": "/mtg-search/static/js/main.06499ca5.js.map",
+    "main.85cfffb7.css.map": "/mtg-search/static/css/main.85cfffb7.css.map",
+    "main.36ad567a.js.map": "/mtg-search/static/js/main.36ad567a.js.map",
     "787.77792f63.chunk.js.map": "/mtg-search/static/js/787.77792f63.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c3b7e55.css",
-    "static/js/main.06499ca5.js"
+    "static/css/main.85cfffb7.css",
+    "static/js/main.36ad567a.js"
   ]
 }
