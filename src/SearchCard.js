@@ -21,29 +21,40 @@ export default function SearchCard() {
     }
 
     return (
-    <>
-      <form className="form" onSubmit={findCard}>
-        <label htmlFor="query" className="label">
-          Find MTG cards
-        </label>
-        <input className="input" type="text" 
-        name="query"
-        value={query} onChange={(e)=> setQuery(e.target.value)} 
-        placeholder="Type card name here"></input>
-        <button className="button" type="submit">
-          Search
-        </button>
-      </form>
-      <div className='card-list'>
-        {card.map(chosenCard => (
-            <div className='card' key={card.id}>
-                <img className='card--image'
-                src={card[0].imageUrl} alt=""
-                />
-
+      <>
+        <form className="form" onSubmit={findCard}>
+          <label htmlFor="query" className="label">
+            Find MTG cards
+          </label>
+          <input
+            className="input"
+            type="text"
+            name="query"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Type card name here"
+          ></input>
+          <button className="button" type="submit">
+            Search
+          </button>
+        </form>
+        <div className="card-list">
+          {card.filter(chosenCard =>chosenCard.imageUrl).map((chosenCard, id) => (
+            <div className="card" key={card.id}>
+              <img
+                className="card--image"
+                src={chosenCard.imageUrl}
+                alt={chosenCard.name + " card"}
+              />
+              <div className="card--content">
+                <h3 className='card--title'>{chosenCard.name}</h3>
+                <p><small>Mana Cost: {chosenCard.manaCost}</small></p>
+                <p><small>Type: {chosenCard.type}</small></p>
+                <p className='card--desc'>{chosenCard.text}</p>
+              </div>
             </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </>
     );
 }
